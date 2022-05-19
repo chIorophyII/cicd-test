@@ -1,11 +1,11 @@
-package com.sparta.cicdtest.controller;
+package com.sparta.cicdtest;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class LoggingController {
+public class OssackController {
     @Value("${logging-module.version}")
     private String version;
 
@@ -18,4 +18,6 @@ public class LoggingController {
     public String checkHealth() {
         return "healthy";
     }
+
+
 }

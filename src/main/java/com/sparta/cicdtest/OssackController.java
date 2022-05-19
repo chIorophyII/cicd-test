@@ -14,7 +14,7 @@ import java.util.List;
 public class OssackController {
     private final Environment env;
 
-    @Value("${logging-module.version}")
+    @Value("${ossack-module.version}")
     private String version;
 
     @GetMapping("/")
